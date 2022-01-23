@@ -196,8 +196,10 @@ def main():
     clock = pygame.time.Clock()
     while flag:
         #changes speed of snake - depends on speed of machine
+        #bigger number = slower
         pygame.time.delay(50)
-        clock.tick(10)
+        #
+        clock.tick(1000)
         s.move()
         if s.body[0].pos == snack.pos:
             #if the head of the snake hits the snack a new cube is added to the snake and a new snack is generated
